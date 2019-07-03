@@ -39,3 +39,64 @@ long long int modfun(int a, long long int b, int mod)
 	}
 	return result;
 }
+
+/*
+#include <stdio.h>
+int main()
+{
+	int T, A, B, C;
+	scanf("%d", &T);
+	while (T--)
+	{
+		scanf("%d %d", &A, &B);
+		C = 1;
+		while (B){
+			if (B % 2) C = (C* A) % 10;
+			B /= 2;
+			A = (A*A) % 10;
+		}
+		printf("%d\n", C ? C : 10);
+	}
+}
+*/
+/*
+mod 곱셈성질 이용(결합법칙)
+#include <stdio.h>
+
+int main()
+{
+	int n, a, b, ans;
+	scanf("%d", &n);
+
+	for(int i=1; i<=n; i++)
+	{
+		ans = 1;
+		scanf("%d %d", &a, &b);
+		for(int j=1; j<=b; j++)
+			ans = (ans * a)%10;
+		printf("%d\n", ans == 0 ? 10 : ans);
+	}	
+}
+*/
+/*
+뭔소리? 왜 4를 나눔?
+#include <stdio.h>
+using namespace std;
+main()
+{
+int n,x,y,tmp;
+scanf("%d", &n);
+while (n--)
+{
+scanf("%d %d", &x, &y);
+x=x%10;
+y=y%4;
+if (y==0) y=4;
+y-=1;
+tmp=x;
+while(y--) x=(tmp*x)%10;
+if(x==0) x=10;
+printf("%d\n", x);
+}
+}
+*/
