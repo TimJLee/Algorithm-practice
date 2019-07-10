@@ -1,7 +1,7 @@
 #include <cstdio>
 #define m 10007
 int main(){
-  long long int i,j,k,sum=0,T[1000][10],N;
+  int i,j,k,sum=0,T[1000][10]={0},N; // 배열 초기화 반드시 할것..!
   scanf("%d",&N);
   for(i=0;i<10;i++) T[0][i]=1;
 
@@ -12,7 +12,6 @@ int main(){
       }
     }
   }
-  //for(i=0;i<10;i++) printf("%d\n",T[N-1][i]);
   for(i=0;i<10;i++) sum=(sum+T[N-1][i])%m;
   printf("%d",sum);
 }
