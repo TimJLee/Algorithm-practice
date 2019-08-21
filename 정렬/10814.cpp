@@ -13,15 +13,16 @@ bool cmp(const I &a,const I &b) {
   if(a.age<b.age) return true;
   else if(a.age==b.age){
     if(a.time<b.time) return true;
+    else return false;
   }
+  else return false;
  }
 
 int main(){
   ios_base::sync_with_stdio(false);
   cin.tie(NULL);
-  int i,j,N,temp;
-  string temp2;
-
+  int i,j,N;
+  
   cin>>N;
   vector<I> T(N);
 
