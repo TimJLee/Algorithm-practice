@@ -1,7 +1,11 @@
 # execution file
+**/*.exe
 *.exe
 
 #document
 *.pdf
+**/*.pdf
 *.docx
+**/*.docx
 *.doc
+**/*.doc
