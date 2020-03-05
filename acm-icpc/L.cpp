@@ -20,5 +20,6 @@ int main(){
     }
   }
   result=max(TA[N-1],TB[N-1]);
+
   printf("%d",result);
 }

@@ -1,8 +1,9 @@
 #include <iostream>
+
 using namespace std;
 int main(){
   int N,M,i,j,ans=1;
-  
+
   cin >> N;
   if(N%2==0) M=N/2;
   else M=N/2+1;

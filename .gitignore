@@ -1,0 +1,7 @@
+# execution file
+*.exe
+
+#document
+*.pdf
+*.docx
+*.doc
