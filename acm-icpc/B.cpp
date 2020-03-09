@@ -12,7 +12,7 @@ int main(){
     ans = (ans * 2)%16769023;
   printf("%d\n", ans == 0 ? 16769023 : ans);
 
-
+  
 }
 
 /*
