@@ -36,3 +36,5 @@ int main() {
     sort(num, num + cnt);
     for (int i = 0; i < cnt; i++) printf("%d\n", num[i]);
 }
+
+//참고자료: https://twpower.github.io/151-bfs-dfs-basic-problem
