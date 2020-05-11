@@ -14,3 +14,8 @@ python
 
 #java
 **/*.idea
+/Solution.class
+/PhoneBook.class
+/PhoneBook1.class
+/PhoneBook2.class
+**/*.class
