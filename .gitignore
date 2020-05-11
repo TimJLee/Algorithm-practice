@@ -11,3 +11,6 @@
 **/*.doc  
 소마
 python
+
+#java
+**/*.idea
