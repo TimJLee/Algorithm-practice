@@ -1,6 +1,6 @@
 // #1
 
-class Solution {
+class NotFinished {
     public String solution(String[] participant, String[] completion) {
         String answer="";
         int i=0,j=0;
@@ -29,7 +29,7 @@ import java.util.*;
 class Solution {
     public String solution(String[] participant, String[] completion) {
         String answer="";
-        Map<String, Integer> hm = new HashMap<String, Integer>(); // 동명이인 판별용 해시맵
+        Map<String, Integer> hm = new HashMap<String, Integer>();
         for(int i=0; i<participant.length; i++){ 
             hm.put(participant[i], 0); 
         }
