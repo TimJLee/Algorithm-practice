@@ -16,7 +16,7 @@ public class InterestingParty {
 			dic.put(first[i], dic.getOrDefault(first[i], 0)+1);
 			dic.put(second[i], dic.getOrDefault(second[i], 0)+1);
 		}
-		
+				
 		int ans = Collections.max(dic.values());
 		return ans;
 	}
