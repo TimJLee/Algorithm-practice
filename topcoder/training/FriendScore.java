@@ -3,7 +3,7 @@ import java.util.Arrays;
 public class FriendScore {
 	public static void main(String[] args) {
 		String s1[] = {"NNN", "NNN", "NNN"};
-		String s2[] = {"NYY", "YNY", "YYN"};
+		String s2[] = {"NYY", "YNY", "YYN"}; // 4 -> 오류. 직접친구 중복카운트
 		String s3[] = {"NYNNN", "YNYNN", "NYNYN", "NNYNY", "NNNYN"};
 		
 		FriendScore f = new FriendScore();
