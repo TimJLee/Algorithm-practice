@@ -1,4 +1,4 @@
-# execution file
+﻿# execution file
 **/*.exe
 *.exe
 
@@ -11,6 +11,7 @@
 **/*.doc  
 소마
 python
+**/*.txt
 
 #java
 **/*.idea
