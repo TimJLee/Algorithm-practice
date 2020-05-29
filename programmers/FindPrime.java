@@ -14,8 +14,19 @@ class FindPrime {
     	int count=0;
         HashSet<Integer> hs = new HashSet<>();
         permut("", numbers, hs);
+        
         while(hs.iterator().hasNext()){
             int a = hs.iterator().next();
+            //System.out.println(a);
+            /*
+             * 	0
+				1
+				101
+				10
+				11
+				110
+				2
+             */
             hs.remove(a);
             if(a==2) count++;
             if(a%2!=0 && isPrime(a)){
