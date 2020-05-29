@@ -2,7 +2,8 @@ import java.util.*;
 public class HashSet_1 {
 	public static void main(String[] args) {
 		Set<Integer> set = new HashSet<>();
-		
+		String s = "numbers";
+		System.out.println(s.substring(2,2).equals("")); // true
 		/*
 		 * static int parseInt(String s, int radix) // 문자열 s 를 radix진법으로 인식 & string 을 int 로 변환
 		 * static Integer valueOf(String s, int radix) // 문자열 s를 radix 진법으로 인식 & string 을 Integer 로 변환 

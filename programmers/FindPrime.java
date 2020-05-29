@@ -8,15 +8,16 @@ class FindPrime {
     boolean flag;
     public static void main(String[] args) {
     	FindPrime s = new FindPrime();
-    	System.out.println(s.solution("011"));
+    	System.out.println(s.solution("012"));
     }
     public int solution(String numbers) {
     	int count=0;
         HashSet<Integer> hs = new HashSet<>();
         permut("", numbers, hs);
-        
-        while(hs.iterator().hasNext()){
-            int a = hs.iterator().next();
+        System.out.println(hs); // [0, 1, 101, 10, 11, 110]
+        Iterator it = hs.iterator();
+        while(it.hasNext()){
+            int a = (int)it.next();
             //System.out.println(a);
             /*
              * 	0
@@ -27,9 +28,9 @@ class FindPrime {
 				110
 				2
              */
-            hs.remove(a);
-            if(a==2) count++;
-            if(a%2!=0 && isPrime(a)){
+            //hs.remove(a);
+            if(a==2) count++; // 짝수 중 유일하게 2는 소수임
+            if(a%2!=0 && isPrime(a)){ //짝수는 소수가 아님
                 count++;
             }
         }
@@ -44,10 +45,11 @@ class FindPrime {
         return true;
     }
     
-    public void permut(String prefix, String s, HashSet<Integer> hs){
+    public void permut(String prefix, String s, HashSet<Integer> hs){ // 순열과 조합에서 순열=P = permutation
         int n = s.length();
         
         if(!prefix.equals("")) hs.add(Integer.valueOf(prefix)); // parseInt 와 달리 integer wrapper 객체 반환
+        System.out.println(hs);
         for(int i=0;i<n;i++){
             permut(prefix + s.charAt(i), s.substring(0,i) + s.substring(i+1, n), hs);
         }
