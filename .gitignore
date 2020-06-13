@@ -19,3 +19,4 @@ python
 **/*.classpath
 /programmers/.gitignore
 **/*.project
+**/S3.java
