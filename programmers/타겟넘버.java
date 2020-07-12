@@ -12,3 +12,27 @@ class Solution {
             + dfs(numbers, target, index+1, num-numbers[index]);
     }
 }
+
+//복습 - 내 풀이
+class Solution {
+    int answer;
+    public int solution(int[] numbers, int target) {
+     
+        dfs(0,0,numbers,target);
+        
+        return answer;
+    }
+    public void dfs(int sum, int count, int [] numbers, int target){
+        int n = numbers.length;
+        if(count == n){
+            if(sum == target){
+                answer++;
+                return;
+            }
+            return;
+        }
+        dfs(sum+numbers[count],count+1,numbers,target);
+        dfs(sum-numbers[count],count+1,numbers,target);
+                
+    }
+}
